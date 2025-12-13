@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title> CRUD API Tester</title>
+	</head>
+	<body>
+		<!-- CRUD API TESTER  -->
+		<h1>CRUD API Tester</h1>
+		<hr>
+
+		<!--     CREATE  -->
+		<button onclick=testCreate() > CREATE </button>
+		<input type="email" id="createEmail" placeholder="email">	<!--required input feilds -->
+		<input type="text" id="createPassword" placeholder="password">
+		<hr>
+		
+		<!--     READ ALL -->
+		<button onclick=testReadAll() > READ ALL</button>
+		<hr>
+
+		<!--     READ ONE -->
+		<button onclick=testRead() > READ ID</button>
+		<input type="text" id="readId" placeholder="id">
+		<hr>
+
+		<!--     UPDATE -->
+		<button onclick=testUpdate() > UPDATE </button>
+		<input type="text" id="updateId" placeholder="id">
+		<input type="email" id="updateEmail" placeholder="email">
+		<input type="text" id="updatePassword" placeholder="password">
+		<hr>
+
+		<!--     DELETE  -->
+		<button onclick=testDelete() > DELETE </button>
+		<input type="text" id="deleteId" placeholder="id">
+		<hr>
+
+		<!-- JWT AUTH TESTER  -->
+		
+		<h1>JWT Auth Tester</h1>
+		<hr>
+
+		<!--     JWT LOGIN -->
+		<button onclick=testLogin() > LOGIN </button>
+		<input type="email" id="loginId" placeholder="email">
+		<input type="text" id="loginPassword" placeholder="password">
+		<hr>
+
+		<!--     TOKEN AUTH -->
+		<button onclick=testAuth() > SPECIAL </button>
+		<hr>
+
+		<script src="scripts/api-tester.js"></script>
+	</body>
+</html>
